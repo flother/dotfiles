@@ -1,0 +1,15 @@
+# Don't display welcome screen at startup.
+startup_message off
+
+# Keep 32,000 lines in scrollback.
+defscrollback 32000
+
+# Don't keep full-screen programs (like vim) in the scrollback buffer.
+altscreen on
+
+# Always start `screen` with UTF-8 enabled.
+defutf8 on
+
+# Add status line containing hostname, window info, and time of day.
+hardstatus             alwayslastline
+hardstatus string '%{= kg}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{G}(%{W}%n*%f%t%?(%u)%?%{G})%{w}%?%+Lw%?%?%= %{g}][ %{W}%c %{g}]'
