@@ -42,6 +42,9 @@ set hlsearch
 set incsearch
 " Always show status line.
 set laststatus=2
+" Show filename, modification flag, encoding, line ending, file type, and
+" position (column, line, total lines) in status line.
+set statusline=%f\ %m\ %=%{&fenc}\ %{&ff}\ %Y\ [%c,%l/%L]
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position.
