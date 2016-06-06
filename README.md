@@ -5,7 +5,7 @@ cases, actual code):
 * [Seth House's `.pythonrc`] [3]
 * [256-colour mode for GNU screen] [4]
 
-To install the dotfiles, install [GNU stow] and run:
+To install the dotfiles, install [GNU stow] [5] and run:
 
 `stow bash curl python screen system`
 
