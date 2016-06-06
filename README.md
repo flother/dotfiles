@@ -3,6 +3,7 @@ cases, actual code):
 
 * [Mathias Bynens's dotfiles] [2]
 * [Seth House's `.pythonrc`] [3]
+* [256-colour mode for GNU screen] [4]
 
 To install the dotfiles, install [GNU stow] and run:
 
@@ -12,4 +13,5 @@ To install the dotfiles, install [GNU stow] and run:
 [1]: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 [2]: https://github.com/mathiasbynens/dotfiles
 [3]: https://github.com/whiteinge/dotfiles/blob/master/.pythonrc.py
-[4]: https://www.gnu.org/software/stow/
+[4]: http://www.robmeerman.co.uk/unix/256colours
+[5]: https://www.gnu.org/software/stow/

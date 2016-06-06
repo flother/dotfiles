@@ -10,6 +10,11 @@ altscreen on
 # Always start `screen` with UTF-8 enabled.
 defutf8 on
 
+# Enable 256-colour mode when screen is started with TERM=xterm-256color.
+# See http://www.robmeerman.co.uk/unix/256colours
+attrcolor b ".I"
+termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
 # Add status line containing hostname, window info, and time of day.
 hardstatus             alwayslastline
 hardstatus string '%{= kg}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{G}(%{W}%n*%f%t%?(%u)%?%{G})%{w}%?%+Lw%?%?%= %{g}][ %{W}%c %{g}]'
