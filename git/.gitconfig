@@ -1,7 +1,7 @@
 [user]
 	name = flother
 	email = flother@users.noreply.github.com
-  signingkey = 9FFA2F0F
+	signingkey = 9FFA2F0F
 [core]
 	editor = vim
 [alias]
