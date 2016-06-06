@@ -7,7 +7,7 @@ cases, actual code):
 
 To install the dotfiles, install [GNU stow] [5] and run:
 
-`stow bash curl python screen system`
+`stow bash curl git python screen system`
 
 
 [1]: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
