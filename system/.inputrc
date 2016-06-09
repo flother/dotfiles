@@ -1,0 +1,22 @@
+# Case-insensitive tab autocompletion.
+set completion-ignore-case on
+# List all matches where multiple possible completions.
+set show-all-if-ambiguous on
+# Add trailing slash to autocompleted directory symlinks.
+set mark-symlinked-directories on
+# Use text that's already been typed as a prefix for searching through history.
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+# Don't insert characters from the completion that match characters after the
+# point in the word being completed.
+set skip-completed-text on
+# Allow UTF-8 input and output.
+set input-meta on
+set output-meta on
+set convert-meta off
+# Use visible bell.
+set bell-style visible
+# Use different colours to indicate file types of possible completions.
+set colored-stats on
+# Append a character denoting a file's type when listing possible completions.
+set visible-stats on
