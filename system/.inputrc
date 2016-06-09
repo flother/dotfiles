@@ -1,6 +1,6 @@
 # Case-insensitive tab autocompletion.
 set completion-ignore-case on
-# List all matches where multiple possible completions.
+# Single tab to partially complete a word *and* show all possible completions.
 set show-all-if-ambiguous on
 # Add trailing slash to autocompleted directory symlinks.
 set mark-symlinked-directories on
