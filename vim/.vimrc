@@ -89,9 +89,15 @@ Plugin 'vim-scripts/indentpython.vim'      " Better indentation for Python.
 Plugin 'hdima/python-syntax'               " Better Python syntax highlighting.
 Plugin 'scrooloose/syntastic'              " Check syntax on save.
 Plugin 'nvie/vim-flake8'                   " PEP-8 linter.
+if has('signs')
+	Plugin 'airblade/vim-gitgutter'
+endif
 Plugin 'altercation/vim-colors-solarized'  " Solarized colour scheme.
 call vundle#end()
 filetype plugin indent on
+
+nmap > <Plug>GitGutterNextHunk
+nmap < <Plug>GitGutterPrevHunk
 
 " Use Solarized colour scheme.
 set background=dark
