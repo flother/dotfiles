@@ -61,6 +61,15 @@ prompt_git() {
 	fi;
 }
 
+virtual_env() {
+	# If in a Python virtual environment, output its name. Used in PS1.
+	if [ $(basename $VIRTUAL_ENV &>/dev/null; echo "${?}") == '0' ]; then
+		echo -e "${1}/${2}$(basename $VIRTUAL_ENV)${2}";
+	else
+		return;
+	fi;
+}
+
 if tput setaf 1 &> /dev/null; then
 	tput sgr0; # reset colors
 	bold=$(tput bold);
@@ -100,6 +109,7 @@ fi;
 
 # Set the terminal title and prompt.
 PS1="\[${userStyle}\]\u"; # username
+PS1+="\$(virtual_env \"\[${white}\]\" \"\[${blue}\]\" \"\[${reset}\]\")"; # Python virtualenv
 PS1+="\[${white}\] at ";
 PS1+="\[${yellow}\]\h"; # host
 PS1+="\[${white}\] in ";

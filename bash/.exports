@@ -9,6 +9,8 @@ export PYTHONIOENCODING='UTF-8';
 export PYTHONSTARTUP=~/.pythonrc
 # Set home for Python virtual environments.
 export WORKON_HOME=~/envs
+# A custom prompt is set in .bash_prompt, so we need to disable virtualenv's helper.
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Increase Bash history size.
 export HISTSIZE='32768';
