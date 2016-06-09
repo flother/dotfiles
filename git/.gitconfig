@@ -18,6 +18,8 @@
 	amend = commit --amend --reuse-message=HEAD
 	# List contributors and their number of commits.
 	contributors = shortlog --summary --numbered
+	# List aliased commands.
+	aliases = config --get-regexp ^alias\\.
 [push]
 	default = simple
 	# Push relevant annotated tags when pushing branches using `git push`.
