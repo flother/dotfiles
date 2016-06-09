@@ -10,6 +10,13 @@ To install the dotfiles, install [GNU stow] [6] and run:
 
 `stow bash curl git python screen system vim`
 
+For Vim you'll want to install [Vundle] [7] and then the plugins:
+
+    mkdir -p ~/.vim/bundle/
+    cd $_
+    git clone https://github.com/VundleVim/Vundle.vim.git
+    vim +PluginInstall +qall
+
 
 [1]: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 [2]: https://github.com/mathiasbynens/dotfiles
@@ -17,3 +24,5 @@ To install the dotfiles, install [GNU stow] [6] and run:
 [4]: http://www.robmeerman.co.uk/unix/256colours
 [5]: https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
 [6]: https://www.gnu.org/software/stow/
+[7]: http://github.com/VundleVim/Vundle.Vim
+
