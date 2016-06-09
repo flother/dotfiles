@@ -1,6 +1,8 @@
 from code import InteractiveConsole
 import os
 import pprint
+import readline
+import rlcompleter
 import sys
 from tempfile import mkstemp
 
@@ -85,6 +87,7 @@ class EditableBufferInteractiveConsole(InteractiveConsole):
 
 
 colours = TermColours()
+readline.parse_and_bind("tab: complete")  # Add tab completion.
 sys.ps1 = "%s>>> %s" % (colours["Green"], colours["Normal"])
 sys.ps2 = "%s... %s" % (colours["Red"], colours["Normal"])
 sys.displayhook = pprint_displayhook
