@@ -6,7 +6,7 @@
 	editor = vim
 [alias]
 	st = status -s
-	ci = commit -S
+	ci = commit
 	co = checkout
 	# One commit per line with abbreviated hashes and graphical history.
 	l = log --oneline --graph
@@ -18,9 +18,6 @@
 	amend = commit --amend --reuse-message=HEAD
 	# List contributors and their number of commits.
 	contributors = shortlog --summary --numbered
-[commit]
-  # https://help.github.com/articles/signing-commits-using-gpg/
-  gpgsign = true
 [push]
 	default = simple
 	# Push relevant annotated tags when pushing branches using `git push`.
