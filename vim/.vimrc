@@ -69,19 +69,6 @@ nnoremap <space> za
 " Better Python syntax highlighting.
 let python_highlight_all = 1
 
-if has("autocmd")
-	" Enable file type detection.
-	filetype on
-	" Treat .json files as JavaScript.
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-	" Treat .md files as Markdown.
-	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
-	" Follow PEP-8 for Python source files.
-	autocmd BufNewFile,BufRead *.py set softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
-	" Two-space tabs for HTML, CSS, and JavaScript files.
-	autocmd BufNewFile,BufRead *.js, *.html, *.css set tabstop=2 softtabstop=2 shiftwidth=2
-endif
-
 " Vundle bundles.
 " Install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 filetype off
@@ -102,6 +89,19 @@ filetype plugin indent on
 
 nmap > <Plug>GitGutterNextHunk
 nmap < <Plug>GitGutterPrevHunk
+
+if has("autocmd")
+	" Enable file type detection.
+	filetype on
+	" Treat .json files as JavaScript.
+	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+	" Treat .md files as Markdown.
+	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+	" Follow PEP-8 for Python source files.
+	autocmd BufNewFile,BufRead *.py set softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+	" Two-space tabs for HTML, CSS, and JavaScript files.
+	autocmd BufNewFile,BufRead *.js, *.html, *.css set tabstop=2 softtabstop=2 shiftwidth=2
+endif
 
 " Use Solarized colour scheme.
 set background=dark
