@@ -1,7 +1,9 @@
 " Not needed but "safe": http://stackoverflow.com/a/5845583.
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`).
-set clipboard=unnamed
+if has('clipboard')
+	set clipboard=unnamed
+endif
 " Allow cursor keys in insert mode.
 set esckeys
 " Allow backspace in insert mode.
