@@ -59,7 +59,7 @@ set shortmess=atI
 set showmode
 " Show the filename in the window titlebar.
 set title
-" Start scrolling three lines before the horizontal window border.
+" Start scrolling five lines before the horizontal window border.
 set scrolloff=5
 " Enable code folding.
 set foldmethod=indent
