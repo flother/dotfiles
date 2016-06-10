@@ -76,6 +76,11 @@ set autoread
 if has('linebreak')
 	set breakindent
 endif
+" Set spelling dictionary to British English and show spelling errors.
+if exists("+spelllang")
+	set spelllang=en_gb
+	set spell
+endif
 " Single space after a full-stop when joining lines.
 set nojoinspaces
 
