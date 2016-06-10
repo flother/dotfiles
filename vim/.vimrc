@@ -68,6 +68,16 @@ set foldlevel=99
 nnoremap <space> za
 " Better Python syntax highlighting.
 let python_highlight_all = 1
+" Delete comment character when joining commented lines.
+set formatoptions+=j
+" Read file again when it's been changed outside (but not inside) of Vim.
+set autoread
+" Wrap every line to continue visual indent.
+if has('linebreak')
+	set breakindent
+endif
+" Single space after a full-stop when joining lines.
+set nojoinspaces
 
 " Vundle bundles.
 " Install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
