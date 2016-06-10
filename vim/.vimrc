@@ -30,7 +30,9 @@ set modelines=4
 " Enable line numbers.
 set number
 " Enable syntax highlighting.
-syntax on
+if has('syntax')
+	syntax on
+endif
 " Highlight current line.
 set cursorline
 " Make tabs as wide as four spaces.
