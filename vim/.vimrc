@@ -1,5 +1,7 @@
 " Not needed but "safe": http://stackoverflow.com/a/5845583.
 set nocompatible
+" Turn off modelines (setting Vim variables in a file).
+set modelines=0
 " Use the OS clipboard by default (on versions compiled with `+clipboard`).
 if has('clipboard')
 	set clipboard=unnamed
