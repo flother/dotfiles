@@ -99,6 +99,8 @@ set nojoinspaces
 " Better command completion, with longest shared completion filled.
 set wildmenu
 set wildmode=list:longest
+" Show line numbers relative to current line.
+set relativenumber
 
 " Vundle bundles.
 " Install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
