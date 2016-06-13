@@ -129,6 +129,8 @@ nmap > <Plug>GitGutterNextHunk
 nmap < <Plug>GitGutterPrevHunk
 
 if has("autocmd")
+	" Save file when Vim loses focus.
+	au FocusLost * :wa
 	" Enable file type detection.
 	filetype on
 	" Treat .json files as JavaScript.
