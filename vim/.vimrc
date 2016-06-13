@@ -119,6 +119,8 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.py set softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
 	" Two-space tabs for HTML, CSS, and JavaScript files.
 	autocmd BufNewFile,BufRead *.js, *.html, *.css set tabstop=2 softtabstop=2 shiftwidth=2
+	" Limit line lengths in mutt to 72 characters.
+	autocmd BufRead /tmp/mutt-* set tw=72
 endif
 
 " Use Solarized colour scheme.
