@@ -124,10 +124,6 @@ Plugin 'altercation/vim-colors-solarized'  " Solarized colour scheme.
 call vundle#end()
 filetype plugin indent on
 
-" Map < and > to next and previous file changes (in git-managed files).
-nmap > <Plug>GitGutterNextHunk
-nmap < <Plug>GitGutterPrevHunk
-
 if has("autocmd")
 	" Save file when Vim loses focus.
 	au FocusLost * :wa
