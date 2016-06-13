@@ -52,6 +52,9 @@ set incsearch
 " Use normal regexes for search.
 nnoremap / /\v
 vnoremap / /\v
+" Case-insensitive search unless it includes uppercase.
+set ignorecase
+set smartcase
 " Always show status line.
 set laststatus=2
 " Show filename, modification flag, encoding, line ending, file type, and
