@@ -103,6 +103,8 @@ set wildmode=list:longest
 set relativenumber
 " Preserve undo levels across Vim sessions.
 set undofile
+" Map . to :, to save having to hit shift-. on an Icelandic keyboard.
+nnoremap . :
 
 " Vundle bundles.
 " Install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
