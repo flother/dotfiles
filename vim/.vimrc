@@ -53,6 +53,8 @@ set statusline=%f\ %m\ %=%{&fenc}\ %{&ff}\ %Y\ [%c,%l/%L]
 set nostartofline
 " Show the cursor position.
 set ruler
+" Show a vertical ruler in column 80.
+set colorcolumn=80
 " Don’t show the intro message when starting Vim.
 set shortmess=atI
 " Show the current mode.
