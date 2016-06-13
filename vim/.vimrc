@@ -35,8 +35,13 @@ if has('syntax')
 endif
 " Highlight current line.
 set cursorline
-" Make tabs as wide as four spaces.
+" Four spaces for tabs.
 set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+" Copy indent from current line when starting a new line.
+set autoindent
 " Show “invisible” characters.
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -116,7 +121,7 @@ if has("autocmd")
 	" Treat .md files as Markdown.
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 	" Follow PEP-8 for Python source files.
-	autocmd BufNewFile,BufRead *.py set softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+	autocmd BufNewFile,BufRead *.py set textwidth=79 fileformat=unix
 	" Two-space tabs for HTML, CSS, and JavaScript files.
 	autocmd BufNewFile,BufRead *.js, *.html, *.css set tabstop=2 softtabstop=2 shiftwidth=2
 	" Limit line lengths in mutt to 72 characters.
