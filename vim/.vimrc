@@ -49,6 +49,9 @@ set list
 set hlsearch
 " Highlight dynamically as pattern is typed.
 set incsearch
+" Use normal regexes for search.
+nnoremap / /\v
+vnoremap / /\v
 " Always show status line.
 set laststatus=2
 " Show filename, modification flag, encoding, line ending, file type, and
