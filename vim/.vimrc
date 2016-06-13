@@ -96,6 +96,9 @@ if exists("+spelllang")
 endif
 " Single space after a full-stop when joining lines.
 set nojoinspaces
+" Better command completion, with longest shared completion filled.
+set wildmenu
+set wildmode=list:longest
 
 " Vundle bundles.
 " Install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
