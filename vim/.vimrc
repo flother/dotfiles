@@ -101,6 +101,8 @@ set wildmenu
 set wildmode=list:longest
 " Show line numbers relative to current line.
 set relativenumber
+" Preserve undo levels across Vim sessions.
+set undofile
 
 " Vundle bundles.
 " Install Vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
