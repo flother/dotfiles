@@ -1,0 +1,14 @@
+-- Be quiet while this file is loaded.
+\set ECHO none
+-- Piped statements are fatal, interactive prompts aren't.
+\set ON_ERROR_ROLLBACK interactive
+-- Tab completion uses case of word to be completed, but defaults to uppercase.
+\set COMP_KEYWORD_CASE preserve-upper
+-- Keep only unique queries in history.
+\set HISTCONTROL ignoredups
+-- Show null values as `NULL` rather than a blank string.
+\pset null NULL
+-- Display time taken after each query.
+\timing
+-- Echo all queries.
+\set ECHO all
