@@ -12,8 +12,6 @@ set esckeys
 set backspace=indent,eol,start
 " Optimize for fast terminal connections
 set ttyfast
-" Use UTF-8 encoding.
-set encoding=utf-8
 " Use UTF-8 without BOM.
 set encoding=utf-8 nobomb
 " Change leader.
