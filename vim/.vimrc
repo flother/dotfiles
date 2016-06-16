@@ -121,9 +121,13 @@ Plugin 'nvie/vim-flake8'                   " PEP-8 linter.
 if has('signs')
 	Plugin 'airblade/vim-gitgutter'        " Show git info in the gutter
 endif
+Plugin 'junegunn/goyo.vim'                 " Distraction-free writing.
 Plugin 'altercation/vim-colors-solarized'  " Solarized colour scheme.
 call vundle#end()
 filetype plugin indent on
+
+" Shortcut to use the Goyo plugin.
+nnoremap <leader>g :Goyo<CR>
 
 if has("autocmd")
 	" Save file when Vim loses focus.
