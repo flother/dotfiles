@@ -4,6 +4,8 @@
 	signingkey = 9FFA2F0F
 [core]
 	editor = vim
+[commit]
+	verbose = true
 [alias]
 	st = status -s
 	ci = commit
