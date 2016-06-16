@@ -85,8 +85,9 @@ let python_highlight_all = 1
 set formatoptions+=j
 " Read file again when it's been changed outside (but not inside) of Vim.
 set autoread
-" Wrap every line to continue visual indent.
+" Wrap every line to continue visual indent, but don't break within words.
 if has('linebreak')
+	set linebreak
 	set breakindent
 endif
 " Set spelling dictionary to British English and show spelling errors.
