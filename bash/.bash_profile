@@ -22,6 +22,14 @@ fi;
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
+# Use Homebrew-provided GNU coreutils (grep, find, etc) instead of Apple's
+# bundled versions.
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# Include Python PEP370 per-user commands in $PATH.
+PATH="~/Library/Python3.5/bin:~/Library/Python/2.7/bin:$PATH"
+
 # Use virtualenvwrapper, if it's installed.
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	source /usr/local/bin/virtualenvwrapper.sh;
