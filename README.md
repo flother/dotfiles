@@ -19,9 +19,6 @@ install [Vundle] [8] and the plugins:
     git clone https://github.com/VundleVim/Vundle.vim.git
     vim +PluginInstall +qall
 
-If they don't exist already, you'll need to create directories for Vim's
-backups, swap file, and undo files:
-
 [1]: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 [2]: https://github.com/mathiasbynens/dotfiles
 [3]: https://github.com/whiteinge/dotfiles/blob/master/.pythonrc.py
