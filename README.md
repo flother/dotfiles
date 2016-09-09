@@ -11,17 +11,16 @@ To install the dotfiles, install [GNU stow] [7] and run:
 
 `stow bash curl git postgresql python screen system vim`
 
-For Vim you'll want to install [Vundle] [8] and then the plugins:
+For Vim you'll want to create directories for backups/swap files/undos, then
+install [Vundle] [8] and the plugins:
 
-    mkdir -p ~/.vim/bundle/
+    mkdir -p ~/.vim/swaps ~/.vim/backups ~/.vim/undo ~/.vim/bundle/
     cd $_
     git clone https://github.com/VundleVim/Vundle.vim.git
     vim +PluginInstall +qall
 
 If they don't exist already, you'll need to create directories for Vim's
 backups, swap file, and undo files:
-
-    mkdir -p ~/.vim/swaps ~/.vim/backups ~/.vim/undo
 
 [1]: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 [2]: https://github.com/mathiasbynens/dotfiles
