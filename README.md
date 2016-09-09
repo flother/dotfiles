@@ -18,6 +18,10 @@ For Vim you'll want to install [Vundle] [8] and then the plugins:
     git clone https://github.com/VundleVim/Vundle.vim.git
     vim +PluginInstall +qall
 
+If they don't exist already, you'll need to create directories for Vim's
+backups, swap file, and undo files:
+
+    mkdir -p ~/.vim/swaps ~/.vim/backups ~/.vim/undo
 
 [1]: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 [2]: https://github.com/mathiasbynens/dotfiles
@@ -27,4 +31,3 @@ For Vim you'll want to install [Vundle] [8] and then the plugins:
 [6]: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 [7]: https://www.gnu.org/software/stow/
 [8]: http://github.com/VundleVim/Vundle.Vim
-
