@@ -9,7 +9,7 @@ cases, actual code):
 
 To install the dotfiles, install [GNU stow] [7] and run:
 
-`stow bash curl git python screen system vim`
+`stow bash curl git postgresql python screen system vim`
 
 For Vim you'll want to install [Vundle] [8] and then the plugins:
 
