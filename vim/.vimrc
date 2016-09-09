@@ -144,6 +144,8 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.js, *.html, *.css set tabstop=2 softtabstop=2 shiftwidth=2
 	" Limit line lengths in mutt to 72 characters.
 	autocmd BufRead /tmp/mutt-* set tw=72
+	" Soft wrap at terminal width for Markdown files.
+	autocmd BufNewFile,BufRead *.md set wrap linebreak nolist textwidth=0 wrapmargin=0
 endif
 
 " Use Solarized colour scheme.
