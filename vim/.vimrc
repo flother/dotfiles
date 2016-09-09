@@ -88,6 +88,8 @@ set autoread
 " Wrap every line to continue visual indent, but don't break within words.
 if has('linebreak')
 	set linebreak
+endif
+if has("breakindent")
 	set breakindent
 endif
 " Set spelling dictionary to British English and show spelling errors.
