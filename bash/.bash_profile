@@ -28,7 +28,7 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Include Python PEP370 per-user commands in $PATH.
-PATH="~/Library/Python3.5/bin:~/Library/Python/2.7/bin:$PATH"
+PATH="~/Library/Python/3.5/bin:~/Library/Python/2.7/bin:$PATH"
 
 # Use virtualenvwrapper, if it's installed.
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
