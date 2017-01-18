@@ -37,6 +37,7 @@ PATH="~/Library/Python/3.5/bin:~/Library/Python/2.7/bin:$PATH"
 PATH=$PATH:/usr/local/opt/gdal-20/bin
 
 # Use virtualenvwrapper, if it's installed.
+VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	source /usr/local/bin/virtualenvwrapper.sh;
 fi;
