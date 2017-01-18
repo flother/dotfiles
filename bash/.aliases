@@ -46,6 +46,7 @@ alias iplocal="ipconfig getifaddr en0"
 
 # View HTTP traffic.
 alias sniff="sudo ngrep -t '^(GET|POST) ' 'tcp and port 80'"
+alias https="http --default-scheme=https"
 
 # OS X has no `md5sum` nor `sha1sum`, so use `md5` and `shasum` as a fallback.
 command -v md5sum > /dev/null || alias md5sum="md5"
