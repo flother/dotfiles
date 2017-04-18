@@ -33,9 +33,6 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 # Include Python PEP370 per-user commands in $PATH.
 PATH="~/Library/Python/3.5/bin:~/Library/Python/2.7/bin:$PATH"
 
-# Include GDAL 2.0 binaries (http://gis.stackexchange.com/a/209786).
-PATH=$PATH:/usr/local/opt/gdal-20/bin
-
 # Use virtualenvwrapper, if it's installed.
 VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
