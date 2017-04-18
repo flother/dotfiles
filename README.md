@@ -1,18 +1,18 @@
-Personal dotfiles, [managed with GNU Stow] [1]. Inspiration (and, in many
+Personal dotfiles, [managed with GNU Stow][1]. Inspiration (and, in many
 cases, actual code):
 
-* [Mathias Bynens's dotfiles] [2]
-* [Seth House's `.pythonrc`] [3]
-* [256-colour mode for GNU screen] [4]
-* [Python and Vim] [5]
-* [Steve Losh's "Coming home to Vim"] [6]
+* [Mathias Bynens's dotfiles][2]
+* [Seth House's `.pythonrc`][3]
+* [256-colour mode for GNU screen][4]
+* [Python and Vim][5]
+* [Steve Losh's "Coming home to Vim"][6]
 
-To install the dotfiles, install [GNU stow] [7] and run:
+To install the dotfiles, install [GNU stow][7] and run:
 
 `stow bash curl git postgresql python screen system vim`
 
 For Vim you'll want to create directories for backups/swap files/undos, then
-install [Vundle] [8] and the plugins:
+install [Vundle][8] and the plugins:
 
     mkdir -p ~/.vim/swaps ~/.vim/backups ~/.vim/undo ~/.vim/bundle/
     cd $_
