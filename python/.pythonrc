@@ -85,15 +85,12 @@ class EditableBufferInteractiveConsole(InteractiveConsole):
             line = lines[-1]
         return line
 
-try:
-    get_ipython
-except NameError:
-    colours = TermColours()
-    readline.parse_and_bind("tab: complete")  # Add tab completion.
-    sys.ps1 = "%s>>> %s" % (colours["Green"], colours["Normal"])
-    sys.ps2 = "%s... %s" % (colours["Red"], colours["Normal"])
-    sys.displayhook = pprint_displayhook
-    c = EditableBufferInteractiveConsole(locals=locals())
-    c.interact(banner="")
-    sys.exit()
+colours = TermColours()
+readline.parse_and_bind("tab: complete")  # Add tab completion.
+sys.ps1 = "%s>>> %s" % (colours["Green"], colours["Normal"])
+sys.ps2 = "%s... %s" % (colours["Red"], colours["Normal"])
+sys.displayhook = pprint_displayhook
+c = EditableBufferInteractiveConsole(locals=locals())
+c.interact(banner="")
+sys.exit()
 
