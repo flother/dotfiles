@@ -38,3 +38,6 @@ VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	source /usr/local/bin/virtualenvwrapper.sh;
 fi;
+
+# Include locally-compiled Rust executables in PATH.
+PATH=$PATH:~/.cargo/bin
