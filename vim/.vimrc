@@ -129,8 +129,11 @@ Plugin 'altercation/vim-colors-solarized'  " Solarized colour scheme.
 call vundle#end()
 filetype plugin indent on
 
-" Shortcut to use the Goyo plugin.
+" Keyboard shortcuts.
 nnoremap <leader>g :Goyo<CR>
+map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-u> :GundoToggle<CR>
+nnoremap ,w :b#<bar>bd#<CR>
 
 if has("autocmd")
 	" Save file when Vim loses focus.
@@ -154,3 +157,8 @@ endif
 " Use Solarized colour scheme.
 set background=dark
 colorscheme solarized
+let g:solarized_menu=0
+
+if has("gui_macvim")
+    let macvim_hig_shift_movement = 1
+endif
