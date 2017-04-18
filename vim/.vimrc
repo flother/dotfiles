@@ -113,11 +113,14 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'                 " Let Vundle handle Vundle.
+Plugin 'scrooloose/nerdtree'               " File explorer.
 Plugin 'tmhedberg/SimpylFold'              " Better code folding.
 Plugin 'vim-scripts/indentpython.vim'      " Better indentation for Python.
 Plugin 'hdima/python-syntax'               " Better Python syntax highlighting.
 Plugin 'scrooloose/syntastic'              " Check syntax on save.
 Plugin 'nvie/vim-flake8'                   " PEP-8 linter.
+Plugin 'sjl/gundo.vim'                     " Visualise Vim undo tree.
+Plugin 'vim-scripts/AutoClose'             " Insert matching bracket etc.
 if has('signs')
 	Plugin 'airblade/vim-gitgutter'        " Show git info in the gutter
 endif
