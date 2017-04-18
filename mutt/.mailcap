@@ -1,0 +1,4 @@
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+image/*; open -a Preview %s; needsterminal; nametemplate=%s.jpg
+application/pdf; open -a Preview %s; needsterminal; nametemplate=%s.pdf
+

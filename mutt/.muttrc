@@ -1,0 +1,72 @@
+# Set envelope address to from address.
+set envelope_from = yes
+# Save copies of sent emails.
+set copy = yes
+# Use the Little Brother Database to query contacts.
+set query_command="lbdbq '%s' 2> /dev/null"
+set move = no
+set hidden_host
+# Keep a cache of headers and bodies for faster loading.
+set header_cache = "~/.mutt/cache"
+set message_cachedir = "~/.mutt/cache"
+# Activate TLS if available on the server.
+set ssl_starttls = yes
+# Always use SSL when connecting to a server.
+set ssl_force_tls = yes
+# Don't wait to enter mailbox manually.
+unset imap_passive
+# Automatically poll subscribed mailboxes for new mail.
+set imap_check_subscribed
+# Reduce polling frequency to a sane level.
+set mail_check = 60
+# Bell on new emails.
+set beep_new
+# Display download progress every 5k.
+set net_inc=5
+# Show most recent emails on top.
+set sort = reverse-date-received
+# Include the message in replies.
+set include
+# Use UTF-8.
+set charset = UTF-8
+set send_charset = 'UTF-8'
+# Don't show wrap markers when reading emails.
+set nomarkers
+# Just new/read will do.
+unset mark_old
+# No need to press a key after a shell escape etc.
+set wait_key = no
+# Don't ask for confirmation when moving message to another mailbox.
+set confirmappend = no
+# Quit without needing confirmation.
+set quit
+# Format of subject line when forwarding an email.
+set forward_format = "Fwd: %s"
+# Prefer plain-text over HTML.
+alternative_order text/plain text/html
+# No unnecessary line breaks in plain-text emails.
+set text_flowed=yes
+# Custom headers.
+unmy_hdr *  # Delete any existing headers.
+# Use tab for email address completion.
+bind editor <Tab> complete-query
+# Delete messages on exit without confirmation.
+set delete=yes
+# Automatically display HTML email (using w3m as set in .mailcap).
+auto_view text/html
+# Tweak message list columns (non-US data, wider space for names).
+set index_format="%4C %Z %{%d %b} %-20.20L (%?l?%4l&%4c?) %s"
+# Set status line content. Details: http://rdrop.com/docs/mutt/manual340.html.
+set status_format="--- %u/%m (+%b) %>- %P ---"
+# When previewing messages, keep header line and ten messages visible.
+set pager_index_lines = 11
+# Don't go to next message automatically.
+set pager_stop          = yes
+# List URLs in an email with Ctrl-u.
+macro pager \Cu "|urlview<enter>" "view URLs"
+macro index,pager A "<save-message>=Archive<enter>"  "move to Archive folder"
+
+source ~/.mutt/account.home
+
+# Solarized colour scheme: https://github.com/altercation/mutt-colors-solarized
+source ~/.mutt/solarized-dark-256.muttrc
