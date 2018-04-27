@@ -4,6 +4,7 @@
 	signingkey = 9FFA2F0F
 [core]
 	editor = vim
+	ignorecase = false
 [commit]
 	verbose = true
 [alias]
