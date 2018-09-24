@@ -5,6 +5,7 @@
 [core]
 	editor = vim
 	ignorecase = false
+	excludesfile = ~/.gitignore
 [commit]
 	verbose = true
 [alias]
