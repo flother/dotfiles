@@ -90,6 +90,7 @@ colours = TermColours()
 readline.parse_and_bind("tab: complete")  # Add tab completion.
 sys.ps1 = "%s>>> %s" % (colours["Green"], colours["Normal"])
 sys.ps2 = "%s... %s" % (colours["Red"], colours["Normal"])
+sys.displayhook = pprint_displayhook
 c = EditableBufferInteractiveConsole(locals=locals())
 c.interact(banner="")
 sys.exit()
