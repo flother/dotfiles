@@ -37,3 +37,6 @@ eval "$(pyenv virtualenv-init -)"
 
 # Include locally-compiled Rust executables in PATH.
 PATH=$PATH:~/.cargo/bin
+
+# Add fzf key bindings, if available.
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
