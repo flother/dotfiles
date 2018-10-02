@@ -30,14 +30,10 @@ fi;
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
-# Include Python PEP370 per-user commands in $PATH.
-PATH="~/Library/Python/3.5/bin:~/Library/Python/2.7/bin:$PATH"
-
-# Use virtualenvwrapper, if it's installed.
-VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-	source /usr/local/bin/virtualenvwrapper.sh;
-fi;
+# Use pyenv to manage Python versions and virtualenvs.
+PATH="$(pyenv root)/shims:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # Include locally-compiled Rust executables in PATH.
 PATH=$PATH:~/.cargo/bin
