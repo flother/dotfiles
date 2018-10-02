@@ -20,6 +20,8 @@
 	remotes = remote -v
 	# Add currently staged files to the latest commit.
 	amend = commit --amend --reuse-message=HEAD
+	# Include new files in a stash.
+	stashall = stash save --include-untracked
 	# List contributors and their number of commits.
 	contributors = shortlog --summary --numbered
 	# List aliased commands.
