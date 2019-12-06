@@ -15,7 +15,7 @@ For Vim you'll want to create directories for backups/swap files/undos, then
 install [Vundle][8] and the plugins:
 
     mkdir -p ~/.vim/swaps ~/.vim/backups ~/.vim/undo ~/.vim/bundle/
-    cd $_
+    cd ~/.vim/bundle
     git clone https://github.com/VundleVim/Vundle.vim.git
     vim +PluginInstall +qall
 
