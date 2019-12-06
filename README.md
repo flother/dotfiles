@@ -9,7 +9,7 @@ cases, actual code):
 
 To install the dotfiles, install [GNU stow][7] and run:
 
-`stow bash curl git mutt postgresql python screen sqlite system vim`
+`stow -t ~ bash curl git mutt postgresql python screen sqlite system vim`
 
 For Vim you'll want to create directories for backups/swap files/undos, then
 install [Vundle][8] and the plugins:
