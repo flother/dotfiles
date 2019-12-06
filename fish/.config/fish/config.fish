@@ -4,3 +4,8 @@ set PATH "$HOME/.local/bin" $PATH
 # https://docs.python-guide.org/dev/pip-virtualenv/#requiring-an-active-virtual-environment-for-pip
 set -x PIP_REQUIRE_VIRTUALENV true
 
+if type -q subl
+  set -x EDITOR subl
+else
+  set -x EDITOR vi
+end;
