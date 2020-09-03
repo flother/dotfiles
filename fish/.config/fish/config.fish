@@ -1,7 +1,7 @@
-set -x VIRTUAL_ENV_DISABLE_PROMPT 1
-set -x PIP_REQUIRE_VIRTUALENV 1
-set -x HOMEBREW_NO_ANALYTICS 1
-set -x HOMEBREW_NO_AUTO_UPDATE 1
+set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
+set -gx PIP_REQUIRE_VIRTUALENV 1
+set -gx HOMEBREW_NO_ANALYTICS 1
+set -gx HOMEBREW_NO_AUTO_UPDATE 1
 
 status --is-interactive; and source (pyenv init - | psub)
 status --is-interactive; and source (pyenv virtualenv-init - | psub)
