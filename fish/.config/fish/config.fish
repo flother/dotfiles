@@ -1,3 +1,5 @@
+set -x VIRTUAL_ENV_DISABLE_PROMPT 1
+
 status --is-interactive; and source (pyenv init - | psub)
 status --is-interactive; and source (pyenv virtualenv-init - | psub)
 set PATH "$HOME/.local/bin" $PATH
