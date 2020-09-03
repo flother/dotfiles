@@ -1,7 +1,6 @@
 [user]
-	name = flother
-	email = flother@users.noreply.github.com
 	signingkey = 9FFA2F0F
+	useConfigOnly = true
 [core]
 	editor = vim
 	ignorecase = false
@@ -35,3 +34,5 @@
 	followTags = true
 [color]
 	ui = true
+[includeIf "gitdir:~/Documents/repos/work/"]
+    path = ~/Documents/repos/work/.gitconfig
